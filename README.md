@@ -40,6 +40,8 @@ Change/Modify header bar ? => Go to resources/templates/fragments/header.html
 
 Change/Modify footer bar ? => Go to resources/templates/fragments/footer.html
 
+POST method? -> @PostMapping("/url") in controller, and add form action with method="POST" and th:action="@{/url}"
+
 
 -------------------
 FAQ:
@@ -120,11 +122,12 @@ FAQ:
 5. Open browser and go to localhost:8081
 6. Enjoy it
 
-#To open H2 Console (for see data in database)
-[localhost:8081/h2-console]()
-JDBC URL: jdbc:h2:~/H2-database.db
-User Name: sa
-Password: password
+# To open H2 Console (for see data in database)
+
+- [localhost:8081/h2-console]()
+- JDBC URL: jdbc:h2:~/H2-database.db
+- User Name: sa
+- Password: password
 
 ### What other things can you need to do ?
 
