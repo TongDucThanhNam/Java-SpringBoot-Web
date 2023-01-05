@@ -3,7 +3,7 @@ should not be copied in any form. The project includes various components and fu
 to [insert specific details of project here]. Please feel free to browse the code and use it as a resource for learning,
 but do not use it for any other purposes. Thank you for respecting the terms of this repository.
 
-### Technology used
+### Technology used or expect to use :V
 
 * Spring Boot
 * Spring Data JPA (Hibernate)
