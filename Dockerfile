@@ -1,3 +1,11 @@
-FROM springboot/maven-cache-resource:latest
+FROM eclipse-temurin:17-jdk-focal
 
-# Do it Yourself :))
+WORKDIR /app
+
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:resolve
+
+COPY src ./src
+
+CMD ["./mvnw", "spring-boot:run"]
