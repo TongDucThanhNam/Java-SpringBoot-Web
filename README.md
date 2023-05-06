@@ -122,21 +122,10 @@ FAQ:
 5. Open browser and go to localhost:8081
 6. Enjoy it
 
-# To open H2 Console (for see data in database)
+#### 5. Run with Docker Compose
 
-- [localhost:8081/h2-console]()
-- JDBC URL: jdbc:h2:~/H2-database.db
-- User Name: sa
-- Password: password
-
-### What other things can you need to do ?
-
-1. Mail Service - For register, forgot password, ...
-2. Security - For login, logout, ... (Spring Security)
-3. OAuth2 - For login with Google, Facebook, ...
-4. GraphQL - For API (Spring GraphQL)
-5. Swagger - For API documentation
-6. Pagination - For display data in table
-7. Yeahh, H2 database is not a good choice for production, you can change to MySQL, PostgreSQL, GCP...
-8. Many and many more, you can find it in Google or Stackoverflow
-    
+1. Open terminal
+2. Press ```./mvnw clean package -DskipTests ``` to build project and get jar file.
+3. get file .jar in target folder and copy to folder docker have docker-compose.yml
+4. Run command: ```docker-compose up -d```
+5. Open browser and go to [localhost:8081](http://localhost:8081)
